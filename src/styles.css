@@ -82,3 +82,11 @@ form {
   padding: 15px;
   border-radius: 20px;
 }
+a{
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+a:hover{
+  text-decoration: underline;
+}
