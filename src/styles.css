@@ -42,13 +42,15 @@ li {
 }
 .temperature {
   color: black;
-  text-align: left;
-  font-weight: 400;
   font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
 }
 .units{
   text-align: top;
   position: relative;
+  top: -34px;
+  font-size: 16px;
 }
 form {
   text-align: center;
