@@ -92,3 +92,6 @@ a{
 a:hover{
   text-decoration: underline;
 }
+#humidity-wind{
+  text-align: center;
+}

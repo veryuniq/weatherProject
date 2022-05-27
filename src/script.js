@@ -1,6 +1,3 @@
-let dateElement = document.querySelector(`#calendar-date`);
-let currentTime = new Date();
-
 function formatDate(date) {
   let hours = currentTime.getHours();
   if (hours < 10) {
@@ -38,6 +35,10 @@ function formatDate(date) {
 
   return `${day} ${hours} ${minutes}`;
 }
+
+let dateElement = document.querySelector(`#calendar-date`);
+  let currentTime = new Date();
+
 
 let speicalDate = document.querySelector(`#calendar-date`);
 speicalDate.innerHTML = currentTime;
