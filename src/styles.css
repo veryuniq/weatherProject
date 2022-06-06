@@ -5,18 +5,26 @@ body {
   margin: 20px auto;
   border-radius: 10px;
   max-width: 600px;
+  font-family: arial, sans-serif;
 }
 h1 {
-  color: black;
+  color: #878787;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0;
   text-align: right;
-  font-size: 30px;
-  border: 1px solid rgb(33, 164, 234);
-  padding: 5px 15px;
-  border-radius: 5px;
-  width: 250px;
-  margin-right: 50px;
 }
-.forecast {
+ul{
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+#description {
+  text-align: right;
+  font-size: 16px;
+}
+#icon {
   color: black;
   text-align: left;
   font-weight: 400;
@@ -29,10 +37,14 @@ hr {
   margin: 1px 1px 1px 225px;
 }
 li {
-  color: black;
+  color: rgb(135, 135, 135);
   font-style: italic;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .today {
   text-align: right;
@@ -84,14 +96,29 @@ form {
   padding: 15px;
   border-radius: 20px;
 }
-a{
+.github{
   text-align: center;
-  text-decoration: none;
   display: block;
+}
+a{
+  text-decoration: none;
 }
 a:hover{
   text-decoration: underline;
 }
 #humidity-wind{
   text-align: center;
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+}
+#humidity-wind:first-letter {
+  text-transform: capitalize;
+}
+
+#humidity,#wind {
+  color: red;
+}
+#humidity-unit,#wind-unit {
+  color: red;
 }

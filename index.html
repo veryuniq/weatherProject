@@ -16,52 +16,57 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form class="search-form" id="search-form">
-          <div class="row">
-            <div class="col-9">
-              <input
-                type="search"
-                placeholder="Type a city.."
-                autofocus="on"
-                autocomplete="off"
-                id="city-input"
-                class="form-control"
-              />
-            </div>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form class="search-form" id="search-form">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  autocomplete="off"
+                  id="city-input"
+                  class="form-control"
+                />
+              </div>
             <div class="col-3">
               <input
                 type="submit"
                 value="Search"
                 id="button"
-                class="form-control btn btn-primary"
+                class="btn btn-primary w-100"
               />
             </div>
-          </div>
-        </form>
-        <div class="container align-today">
-        <div class="row">
-          <div class="col-6">
-        <strong class="temperature" id="temperature">12</strong>
-          <span class="units">°C
-          </span>
-        </div>
-        <div class="col-6">
-        <h1 id="location">Córdoba, Spain</h1>
-      </div>
-    </div>
-    <hr>
-        <div class="row">
-          <div class="col-6">
-            <br>
-<!--place emoji here-->
-            <img 
-              src=""
-              alt=""
-              id="icon"
-              class="float-left">
-<!--delete this once the emoji has been added-->
-            <span class="forecast"> Rain </span>
+            </div>
+          </form>
+          <div class="container align-today">
+            <div class="row">
+              <div class="col-6">
+                <div class="clearfix weather-temperature">
+                <strong class="temperature" id="temperature"></strong>
+                <span class="units"
+                  ><a href="#" id="celsius-link" class="active">°C</a> | 
+                  <a href="#" id="fahrenheit-link">°F</a>
+                </span>
+                </div>
+             </div>
+              <div class="col-6">
+                <h1 id="city"></h1>
+                <ul>
+                  <li id="description"></li>
+                </ul>
+              </div>
+            </div>
+              <hr>
+            <div class="row">
+              <div class="col-6">
+                <br>
+<!--place icon here-->
+                <img 
+                  src=""
+                  alt="icon"
+                  id="icon"
+                  class="float-left">
           </div>
           <div class="col-6">
             <ul>
@@ -71,85 +76,15 @@
           </div>
         </div>
           <div class="column" id="humidity-wind">
-            <span id="percipitation">Percipitation: <span>%</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
-            <span id="humidity">Humidity: <span id="humidity"></span>%<span></span> &nbsp;&nbsp;&nbsp;&nbsp;
-            <span id="wind">Wind: <span> m/h</span></span>
+            <span class="humidity">humidity: <span id="humidity"></span><span id="humidity-unit">%</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="wind">Wind: <span id="wind"></span><span id="wind-unit">km/h</span></span>
           </div>
           </div>
         </div>
-        <div class="container align-week">
-        <div class="row align-week-weather">
-          <div class="col-4">
-            <span class="day">Sat</span>
-            <br />
-            <span class="date">23/4</span>
-          </div>
-          <div class="col-4">
-            <span class="day-temperature">16°</span>
-          </div>
-          <div class="col-4"><img src="src/img/rain.png" width="50"></div>
-        </div>
-        <div class="row align-week-weather">
-          <div class="col-4">
-            <span class="day">Sun</span>
-            <br />
-            <span class="date">24/4</span>
-          </div>
-          <div class="col-4">
-            <span class="day-temperature">21°</span>
-          </div>
-          <div class="col-4"><img src="src/img/partly-cloudy.png" width="50"></div>
-        </div>
-        <div class="row align-week-weather">
-          <div class="col-4">
-            <span class="day">Mon</span>
-            <br />
-            <span class="date">25/4</span>
-          </div>
-          <div class="col-4">
-            <span class="day-temperature">23°</span>
-          </div>
-          <div class="col-4"><img src="src/img/sunny.png" width="50"></div>
-          </div>
-        <div class="row align-week-weather">
-          <div class="col-4">
-            <span class="day">Tue</span>
-            <br />
-            <span class="date">26/4</span>
-          </div>
-          <div class="col-4">
-            <span class="day-temperature">23°</span>
-          </div>
-          <div class="col-4"><img src="src/img/partly-cloudy.png" width="50"></div>
-        </div>
-        <div class="row align-week-weather">
-          <div class="col-4">
-            <span class="day">Wed</span>
-            <br />
-            <span class="date">27/4</span>
-          </div>
-          <div class="col-4">
-            <span class="day-temperature">22°</span>
-          </div>
-          <div class="col-4"><img src="src/img/rain.png" width="50"></div>
-        </div>
-        <div class="row align-week-weather">
-          <div class="col-4">
-            <span class="day">Thu</span>
-            <br />
-            <span class="date">28/4</span>
-          </div>
-          <div class="col-4">
-            <span class="day-temperature">21°</span>
-          </div>
-          <div class="col-4"><img src="src/img/thunderstorm.png" width="50"></div>
-        </div>
+        <small>    
+          <a href="https://github.com/veryuniq/weatherProject.git" class="github">GitHub Repository</a>
+        </small>
       </div>
-        </div>
-      </div>
-        <div>    
-          <a href="https://github.com/veryuniq/weatherProject.git">GitHub Repository</a>
-        </div>
     </div>
     <script src="src/script.js"> </script>
   </body>
