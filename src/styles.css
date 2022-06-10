@@ -15,7 +15,7 @@ body, html {
   margin: 20px auto;
   border-radius: 10px;
   max-height: fit-content;
-  max-width: 500px;
+  max-width: fit-content;
   block-size: fit-content;
   font-family: arial, sans-serif;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);

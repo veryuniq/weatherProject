@@ -39,7 +39,7 @@ function formatDate(date) {
   let today = currentTime.getDate();
   let currentYear = currentTime.getFullYear();
 
-  return `${day} ${today} ${month} ${currentYear} 
+  return `<br>${day} ${today} ${month} ${currentYear} 
   ${hours}:${minutes}`;
 }
 
