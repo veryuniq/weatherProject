@@ -5,7 +5,7 @@ body, html {
 }
 .title{
   text-align: center;
-  color: #878787;
+  color: #b0b0b0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -64,12 +64,10 @@ li {
   margin: 0px 20px;
   padding: 0;
 }
-.today {
+.today, .time {
   text-align: right;
 }
-.time {
-  text-align: right;
-}
+
 .temperature {
   color: black;
   font-size: 64px;
@@ -98,7 +96,7 @@ form {
   position: relative;
 }
 .align-today:hover, .weather-forecast:hover {
-  background-color: rgb(249, 247, 247);
+  background-color: white;
   border: 1px;
   padding: 15px;
   border-radius: 20px;
@@ -120,19 +118,19 @@ a:hover{
   font-size: 16px;
   font-weight: 100;
 }
-#humidity-wind:first-letter {
-  text-transform: capitalize;
+
+#humidity,#wind, #humidity-unit,#wind-unit{
+  color: red;
 }
 
-#humidity,#wind {
-  color: red;
-}
-#humidity-unit,#wind-unit {
-  color: red;
-}
 .info {
   margin-top: 25px;
 }
-#days {
-  column-count: 7;
+
+.github {
+  color: white;
+}
+
+.github:hover {
+  color: azure;
 }

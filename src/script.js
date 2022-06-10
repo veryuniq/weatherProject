@@ -18,6 +18,7 @@ function formatDate(date) {
     `Friday`,
     `Saturday`,
   ];
+  let monthIndex = currentTime.getMonth();
   let months = [
     `Jan`,
     `Feb`,
@@ -33,8 +34,13 @@ function formatDate(date) {
     `Dec`,
   ];
   let day = days[dayIndex];
+  let month = months[monthIndex]
 
-  return `${day} ${hours} ${minutes}`;
+  let today = currentTime.getDate();
+  let currentYear = currentTime.getFullYear();
+
+  return `${day} ${today} ${month} ${currentYear} 
+  ${hours}:${minutes}`;
 }
 
 let dateElement = document.querySelector(`#calendar-date`);
