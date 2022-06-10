@@ -15,7 +15,10 @@
     <title>WeatherApp</title>
   </head>
   <body>
-    <div class="container">
+    <div class="title-container">
+      <h1 class="title">The Weather App</h1>
+    </div>
+    <div class="container" id="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <form class="search-form" id="search-form">
@@ -41,7 +44,7 @@
           </form>
           <div class="container align-today">
             <div class="row">
-              <div class="col-6">
+              <div class="col-6 info">
                 <div class="clearfix weather-temperature">
                 <strong class="temperature" id="temperature"></strong>
                 <span class="units"
@@ -50,7 +53,7 @@
                 </span>
                 </div>
              </div>
-              <div class="col-6">
+              <div class="col-6 info">
                 <h1 id="city"></h1>
                 <ul>
                   <li id="description"></li>
@@ -59,9 +62,8 @@
             </div>
               <hr>
             <div class="row">
-              <div class="col-6">
+              <div class="col-6 icon">
                 <br>
-<!--place icon here-->
                 <img 
                   src=""
                   alt="icon"
@@ -80,11 +82,32 @@
             <span class="wind">Wind: <span id="wind"></span><span id="wind-unit">km/h</span></span>
           </div>
           </div>
+          <div class="weather-forecast" id="forecast">
+            <div class="row">
+              <div class="col">
+                <div class="weather-forecast-date"></div>
+                <img
+                  src=""
+                  alt=""
+                  width="42"
+                />
+                <div class="weather-forecast-temperatures">
+                  <span class="weather-forecast-temperature-max"></span>
+                  <span class="weather-forecast-temperature-min"></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <small>    
-          <a href="https://github.com/veryuniq/weatherProject.git" class="github">GitHub Repository</a>
-        </small>
       </div>
+    </div>
+    <div class="footer-container">
+      <small>
+          <a href="https://github.com/veryuniq/weatherProject.git" 
+          class="github"
+          >GitHub Repository
+          </a>
+      </small>
     </div>
     <script src="src/script.js"> </script>
   </body>

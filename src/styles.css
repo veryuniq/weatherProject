@@ -1,18 +1,36 @@
-body {
-  background-color: white;
-  border: 1px solid #1e1e1e;
+body, html {
+  background: linear-gradient(#1e2638ff 0%, #82c2d2ff);
+  background-size: contain;
+  height: 100%;
+}
+.title{
+  text-align: center;
+  color: #878787;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#container {
+  background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
   padding: 15px;
   margin: 20px auto;
   border-radius: 10px;
-  max-width: 600px;
+  max-height: fit-content;
+  max-width: 500px;
+  block-size: fit-content;
   font-family: arial, sans-serif;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
-h1 {
-  color: #878787;
+.align-today {
+  border: 1px;
+  padding: 15px;
+  border-radius: 20px;
+}
+#city {
+  color: #4c4c4c;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
-  margin-bottom: 0;
+  margin: 0px 20px;
   text-align: right;
 }
 ul{
@@ -34,16 +52,16 @@ ul{
 hr {
   padding: right;
   border: 0px;
-  margin: 1px 1px 1px 225px;
+  margin: 1px 7px 1px 225px;
 }
 li {
-  color: rgb(135, 135, 135);
+  color: #4c4c4c;
   font-style: italic;
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
   list-style: none;
-  margin: 0;
+  margin: 0px 20px;
   padding: 0;
 }
 .today {
@@ -57,6 +75,7 @@ li {
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
+  margin-left: 30px;
 }
 .units{
   text-align: top;
@@ -70,33 +89,22 @@ form {
 .search-form {
   margin-bottom: 20px;
 }
-.align-week {
+.weather-forecast {
   margin: 5px 5px;
   border: 1px;
-}
-.align-week-weather {
-  padding: 15px;
-  margin: 10px 5px 10px;
-  border-radius: 10px;
-  max-width: 600px;
 }
 .day-temperature {
   text-align: center;
   position: relative;
 }
-.align-today:hover {
+.align-today:hover, .weather-forecast:hover {
   background-color: rgb(249, 247, 247);
   border: 1px;
   padding: 15px;
   border-radius: 20px;
+  box-shadow: -7px 5px 14px rgba(0, 0, 0, 0.5);
 }
-.align-week:hover {
-  background-color: rgb(243, 242, 242);
-  border: 1px;
-  padding: 15px;
-  border-radius: 20px;
-}
-.github{
+small{
   text-align: center;
   display: block;
 }
@@ -108,7 +116,7 @@ a:hover{
 }
 #humidity-wind{
   text-align: center;
-  color: rgb(135, 135, 135);
+  color: #4c4c4c;
   font-size: 16px;
   font-weight: 100;
 }
@@ -121,4 +129,10 @@ a:hover{
 }
 #humidity-unit,#wind-unit {
   color: red;
+}
+.info {
+  margin-top: 25px;
+}
+#days {
+  column-count: 7;
 }
